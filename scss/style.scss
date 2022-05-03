@@ -1,0 +1,20 @@
+// Шрифты здесь!
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+// font-family: 'Open Sans', sans-serif;
+@import "_nullstyle";
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+@import "_blocks";
+
+@import "_page";
+
+// Секции
+@import "_start";
+@import "_quality";
+// @import "_about";
+// @import "_section-name";
+// @import "_section-name";
+// @import "_section-name";

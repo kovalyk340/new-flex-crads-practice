@@ -1,0 +1,38 @@
+.wrapper {
+  overflow: hidden;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding: 0 20px;
+}
+
+.subheading {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 150%;
+
+  text-align: center;
+}
+.title {
+  font-family: "Open Sans",sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+
+  text-align: center;
+}
+.text {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+
+  text-align: center;
+}
+.box{
+  max-width: 1380px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding: 0 20px ;
+}
