@@ -1,7 +1,8 @@
 .quality {
     &__row {
         display: flex;
-        margin:0 -30px ;
+
+        margin-top: -59px;
     }
 
     &__column {
@@ -21,7 +22,8 @@
         flex-direction: column;
     }
     &__body{
-        padding:26px 40px 36px 41px;
+        padding:26px 40px 28px 41px;
+
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -36,25 +38,37 @@
 
     &__title {
         margin-bottom: 8px;
-        color: #FFFFFF;
+        color: #fff;
     }
 
     &__text {
-        color: #FFFFFF;
+        color: #fff;
         margin-bottom: 23px;
+        flex: 1 1 auto;
     }
 
     &__wrap-more {
         text-align: center;
-        
     }
 
 
     &__more {
-        padding: 8px 33px;
+        // padding: 8px 33px;
+        width: 150px;
+        height: 38px;
+
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 150%;
+        color: #FFFFFF;
+
         background: #43F074;
         border-radius: 30px;
-        color: #FFFFFF;
+
         transition: all 0.3s ease 0s;
         &:hover{
             background-color: #00A72F;
