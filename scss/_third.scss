@@ -1,0 +1,124 @@
+.third {
+    &__subheading {
+        margin-bottom: 53px;
+    }
+
+    &__row {
+        display: flex;
+        margin: 0 -35px;
+    }
+
+    &__column {
+        flex: 0 1 20%;
+        padding: 0 17.5px;
+    }
+
+    &__item {
+        position: relative;
+
+        padding: 10px 10px 13px 10px;
+        background:#FFA89A;
+
+
+        border-radius: 8px;
+        transition: background 0.3s ease 0s, color 0.3s ease 0s, border-radius 0.1s ease 0.2s;
+ 
+        &::after {
+            content: '';
+
+            position: absolute;
+            top: 100%;
+            left: 0;
+
+            width: 100%;
+            height: 0px;
+            background-color: #FFA89A;
+            border-radius: 0 0 8px 8px;
+
+            transition: all 0.3s ease 0s;
+        }
+        
+        &:hover{
+            transition: background 0.3s ease 0s, color 0.3s ease 0s;
+            border-radius: 8px 8px 0 0;
+            background: #A10B0C;
+            color: #fff;
+            .third__wrap-more {
+                display: block;
+            }
+            &::after { 
+                height: 40px;
+                background-color: #A10B0C;
+            }
+            
+        }
+        flex-direction: column;
+        display: flex;
+        height: 100%;
+    }
+
+    &__image {
+        text-align: center;
+        img{
+            max-width: 100%;
+            margin-bottom: 23px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 11px;
+    }
+
+    &__text {
+        flex: 1 1 auto;
+        margin-bottom: 39px;
+    }
+    &__wrap-more{
+        display: none;
+        text-align: center;
+
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        // left: calc(50% - 48px);
+        z-index: 2;
+
+        transform: translate(-50%, 0);
+    }
+    &__more{
+        position: relative;
+        display: inline-block;
+
+        color: #fff;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 150%;
+
+        text-align: center;
+
+        padding-right: 12px;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            color: #CFF2A2;
+            &::after {
+                border-left-color: #CFF2A2;
+            }
+        }
+        &::after {
+            content: "";
+
+            position: absolute;
+            top: 6px;
+            right: 0px;
+         
+
+            border-left: 7px solid #fff;
+
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+
+            transition: all 0.3s ease 0s;
+        }
+    }
+}
