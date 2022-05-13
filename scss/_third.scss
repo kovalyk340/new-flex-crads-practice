@@ -22,7 +22,7 @@
 
         border-radius: 8px;
         transition: background 0.3s ease 0s, color 0.3s ease 0s, border-radius 0.1s ease 0.2s;
- 
+
         &::after {
             content: '';
 
@@ -111,7 +111,6 @@
             position: absolute;
             top: 6px;
             right: 0px;
-         
 
             border-left: 7px solid #fff;
 

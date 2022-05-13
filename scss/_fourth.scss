@@ -1,0 +1,144 @@
+
+.fourth {
+    &__subheading {
+        margin-bottom: 57px;
+    }
+
+    &__row {
+        display: flex;
+        margin: 0 -37.5px;
+    }
+
+    &__column {
+        flex: 0 1 25%;
+        padding: 0 37.5px;
+    }
+
+    &__item {
+        padding: 42px 28px 20px 30px;
+        background: #EAFFAF;
+        position: relative;
+
+        transition: all 0.3s ease 0s;
+
+        flex-direction: column;
+        display: flex;
+        height: 100%;
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            
+            width: 100%;
+            height: 0px;
+            background-color: #EAFFAF;
+            transition: all 0.3s ease 0s;
+        }
+        &::before{
+            content:"";
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+
+            width:100%;
+            height:0px;
+
+            background-color:#EAFFAF;
+            transition: all 0.3s ease 0s;
+        }
+        &:hover{
+            .fourth__price{
+                color: #01B172;
+            }
+            &::after{
+                height: 30px;
+            }
+            &::before{
+                height: 30px;
+            }
+        }
+
+        
+    }
+
+    &__title {
+        line-height: 130%;
+        margin-bottom: 12px;
+    }
+
+    &__price {
+        font-family: 'Open Sans', sans-serif;
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+
+        text-align: center;
+
+        color: #ED6060;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        font-family: 'Open Sans', sans-serif;
+
+        font-size: 16px;
+        line-height: 150%;
+
+        text-align: center;
+        color: #344650;
+
+        flex: 1 1 auto;
+        margin-bottom: 9px;
+    }
+
+    &__object {
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+
+    &__wrap-more {
+        text-align: center;
+    }
+
+    &__more {
+        position: relative;
+        display: inline-block;
+
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 150%;
+        text-align: center;
+        color: #ED6060;
+
+        padding-right: 12px;
+        transition: all 0.3s ease 0s;
+        &:hover{
+            color: #01B172;
+            &::after{
+                border-top-color: #01B172;
+            }
+        }
+
+        &::after{
+            content: "";
+
+            position: absolute;
+            top: 9px;
+            right: 0px;
+
+            border-top: 7px solid #ED6060;
+            border-right: 4.5px solid transparent;
+            border-left: 4.5px solid transparent;
+
+            
+
+            transition: all 0.3s ease 0s;
+        }
+    }
+}
+
